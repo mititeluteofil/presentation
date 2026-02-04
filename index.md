@@ -3,12 +3,16 @@ layout: default
 ---
 
 <div class="resume-header">
-  <h1>Mititelu Teofil</h1>
-  <p class="tagline">Software Developer & Technology Enthusiast</p>
+  <h1>Teofil Mititelu</h1>
+  <p class="tagline">Java Developer · Microservices & Cloud</p>
   <div class="contact-bar">
-    <a href="mailto:mititelu.teofil@yahoo.ro">mititelu.teofil@yahoo.ro</a>
+    <a href="mailto:teofil.mititelu@gmail.com">teofil.mititelu@gmail.com</a>
     <span class="separator">|</span>
-    <a href="https://github.com/mititeluteofil">github.com/mititeluteofil</a>
+    <span>(+40) 0787 438 469</span>
+    <span class="separator">|</span>
+    <span>Iași, Romania</span>
+    <span class="separator">|</span>
+    <a href="https://github.com/mititeluteofil">GitHub</a>
   </div>
 </div>
 
@@ -16,7 +20,7 @@ layout: default
 
 ## Profile
 
-Results-driven software developer with a passion for building clean, efficient, and scalable solutions. Experienced in modern development workflows, version control, and collaborative software delivery. Continuously exploring emerging technologies and best practices to deliver high-quality work.
+Java developer with 5+ years of professional experience building and maintaining backend systems across banking, telecom, and fintech domains. Skilled in microservice architecture, event-driven design, and cloud-native deployments. Proven track record of working in international, cross-functional teams delivering production-grade software on tight schedules. Comfortable owning full backend lifecycles — from API design and database migrations through CI/CD pipelines and production monitoring.
 
 ---
 
@@ -24,66 +28,109 @@ Results-driven software developer with a passion for building clean, efficient, 
 
 | Category | Technologies |
 |---|---|
-| **Languages** | JavaScript, Python, HTML5, CSS3, SQL |
-| **Frameworks & Libraries** | React, Node.js, Express |
-| **Tools & Platforms** | Git, GitHub, VS Code, Linux, Docker |
-| **Databases** | PostgreSQL, MySQL, MongoDB |
-| **Practices** | Agile/Scrum, CI/CD, REST APIs, Responsive Design |
+| **Languages** | Java 8 / 11 / 17, Kotlin, SQL, TypeScript, JavaScript, PHP |
+| **Backend** | Spring Boot 2.x–3.x, Spring MVC, Spring Security, Spring Data JPA, Hibernate, JPA, REST API |
+| **Frontend** | Angular 6+, TypeScript, Bootstrap, HTML |
+| **Messaging & Events** | Apache Kafka, Event-Driven Architecture |
+| **Databases** | PostgreSQL, Flyway (migrations) |
+| **CI/CD & DevOps** | Jenkins, GitHub Actions, GitLab Pipelines, TeamCity, Maven |
+| **Containers & Cloud** | Docker, Kubernetes, OpenShift, Oracle Cloud Infrastructure |
+| **Monitoring** | Grafana, Wavefront |
+| **Other Tools** | Artifactory, Vault (HashiCorp), Swagger / OpenAPI, LDAP, Microsoft Graph, OAuth, Jira, Git, Bitbucket |
+| **Testing** | JUnit 5, Mockito, PITest (mutation coverage), User Acceptance Testing |
+| **Practices** | Agile / Scrum, Microservice Architecture, Backend For Frontend, CI/CD |
 
 ---
 
 ## Experience
 
-### Software Developer
-*Self-Employed / Freelance*
+### Medior Java Developer — 8x8 International
+*08/2023 – Present · Remote, Romania · Virtual Contact Center*
 {: .date-range}
 
-- Designed and developed web applications using modern JavaScript frameworks and responsive design principles
-- Managed full project lifecycles from requirements gathering through deployment and maintenance
-- Implemented RESTful APIs and integrated third-party services to extend application functionality
-- Maintained version-controlled codebases with Git, following branching strategies and code review practices
+- Investigate and resolve live-application problems (CFDs and bugs) using Oracle Cloud Infrastructure for log recovery and debugging across a large-scale contact-center platform
+- Participate in transitioning a monolith core application to a microservice architecture within a growing team (8-9 engineers, later split into two squads)
+- Maintain and extend a legacy event-driven system built on **Kafka** for asynchronous messaging between core applications, alongside REST APIs for linearly processed tasks
+- Write unit tests, integration tests, and an internal comparison tool that validates production (monolith) scenarios against cloud services by checking event sequences and values
+- Containerise microservices with **Docker**, orchestrate with **Kubernetes**, and manage CI/CD through **Jenkins** and **Artifactory** — personally migrated one application to **GitHub Actions**
 
-### Open Source Contributor
-*GitHub — [github.com/mititeluteofil](https://github.com/mititeluteofil)*
+**Tech:** Java 8 / 11 / 17, Spring Boot 2.x–3.x, Kafka, Maven, Jenkins, GitHub Actions, Kubernetes, Docker, LDAP, Wavefront, Oracle Cloud Infrastructure, Grafana
+
+---
+
+### Medior Java Developer — Luxoft (client: BCR, ERSTE Group)
+*02/2022 – 06/2023 · Remote, Romania*
 {: .date-range}
 
-- Contributed to open source projects and maintained personal repositories showcasing technical capabilities
-- Built and deployed this portfolio site using GitHub Pages with Jekyll static site generation
-- Explored and applied modern development tools and workflows through hands-on projects
+- Developed client-onboarding services that call external vendors and national systems to verify eligibility, create bank accounts, and generate contract signatures
+- Built dynamic document generation with **xPresso for Word** and auto-generated controllers and models from OpenAPI specs via **SwaggerHub**
+- Managed secret injection through **HashiCorp Vault** on Kubernetes and handled database versioning with **Flyway** on PostgreSQL
+- Collaborated with the backend team to develop a full suite of User Acceptance Tests alongside standard unit testing
+
+**Tech:** Java 11, Spring Boot, Maven, GitLab Pipelines, Kubernetes, HashiCorp Vault, Flyway, PostgreSQL, OpenShift, Artifactory, xPresso, OpenAPI / SwaggerHub, Grafana
+
+---
+
+### Backend Developer — Luxoft (client: Deutsche Bank)
+*07/2021 – 02/2022 · Remote, Romania*
+{: .date-range}
+
+- Collaborated with an international team (Germany, Romania, Portugal, Poland) to consolidate multiple applications into a single portal using a **microservice architecture** with a **Backend For Frontend** pattern
+- Called internal services/endpoints, subscribed to API managers, and connected microservices directly to databases for data retrieval and processing
+- Rewrote microservices from **Java to Kotlin**, improving code base maintainability and reducing legacy debt
+- Built **CI/CD pipelines** with TeamCity, Artifactory, and Docker; deployed and scaled via **OpenShift** across multiple environments
+- Gained hands-on experience with asynchronous programming (`CompletableFuture`), mutation testing (**PITest**), and cloud-native deployment
+
+**Tech:** Java, Kotlin, Spring Boot, JUnit 5, Mockito, PITest, TeamCity, Artifactory, Docker, OpenShift, Microservice Architecture, Agile / Scrum
+
+---
+
+### Junior Java / Angular Developer — KireyEst S.R.L.
+*08/2019 – 07/2021 · Iași, Romania*
+{: .date-range}
+
+- **Project 3** — Assigned from project inception across 2 phases with a team of 5–7 developers. Participated in architecture discussions and documentation writing. Used Java 8, SpringBoot, Angular 8, Spring Data JPA, Maven, Hibernate, PostgreSQL, Swagger 2, Docker, Microsoft Graph and OAuth. Gained strong understanding of Agile lifecycle, from basic deploy to functions and tools
+- **Project 2** — Bank web application in a team of 7–8 developers and 3–4 testers, collaborating with other KireyGroup teams. Worked on bug fixes and small functions/modules using Java 7, SpringMVC, Angular 7, Spring Security, and Spring Data JPA
+- **Project 1** — Internal application in a small team of 4–5 using Java 8 and Angular. Mainly frontend development, refactoring the monolith into separate modules with a shared core
+
+**Tech:** Java 7 / 8, Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Hibernate, Angular 7 / 8, TypeScript, PostgreSQL, Swagger 2, Docker, Microsoft Graph, OAuth, Maven
+
+---
+
+### PHP Internship — 5 Point Solutions
+*06/2018 – 11/2018 · Iași, Romania*
+{: .date-range}
+
+- Completed 2 months of training in **PHP**, **Laravel**, and **JavaScript** (Single Page Application architecture)
+- Trained in **ABAP** for SAP application server programming; learned Object Orientation in ABAP syntax and built Dialogs, Reports, and Smart Forms in Web Dynpro
+- Developed and customized modules for a large client using **SAP ERP**, gaining exposure to enterprise-scale systems and MVC architecture
+
+**Tech:** PHP, Laravel, JavaScript, ABAP, SAP ERP, Web Dynpro
 
 ---
 
 ## Education
 
-### Computer Science / Software Engineering
-*University Studies*
+### Bachelor — Computer Science Faculty
+*University "Alexandru Ioan Cuza" · 10/2016 – 02/2020 · Iași, Romania*
 {: .date-range}
 
-- Focused on algorithms, data structures, object-oriented programming, and software design patterns
-- Completed coursework in databases, networking, and web development
+- **Field of study:** Software and Applications Development and Analysis, Database and Network Design and Administration
+- [www.info.uaic.ro](https://www.info.uaic.ro/en/home-page-2/)
+
+### High School Diploma
+*National College "Dimitrie Cantemir" · 09/2012 – 06/2016 · Onești, Romania*
+{: .date-range}
 
 ---
 
-## Projects
+## Languages
 
-### Personal Portfolio & Resume
-A static site built with Jekyll and hosted on GitHub Pages, featuring custom layouts, responsive CSS, and clean typography. Demonstrates proficiency with static site generators, Markdown, and web deployment pipelines.
-
-**Tech:** Jekyll, GitHub Pages, HTML/CSS, Markdown
-
-### Web Applications
-Full-stack web projects leveraging modern frameworks for both front-end interfaces and back-end services. Emphasis on clean architecture, user experience, and maintainable code.
-
-**Tech:** JavaScript, React, Node.js, REST APIs
-
----
-
-## Interests
-
-- Open source software and community-driven development
-- Cloud computing and DevOps automation
-- Continuous learning through online courses and technical reading
-- Problem solving and algorithmic challenges
+| Language | Level |
+|---|---|
+| **Romanian** | Native |
+| **English** | B2 (Upper Intermediate) |
+| **French** | A2 (Elementary) |
 
 ---
 
