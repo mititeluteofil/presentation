@@ -139,7 +139,7 @@ Java developer with 5+ years of professional experience building and maintaining
 
 | Language | Level |
 |---|---|
-| **English** | B2 (Upper Intermediate) - officially. But I have spoken it daily for most of my jobs|
+| **English** | B2 (Upper Intermediate) - officially. But I have spoken it daily for most of my jobs |
 | **French** | A2 (Elementary) |
 | **German** | A1 - Duolingo hobby started in High School |
 ---
