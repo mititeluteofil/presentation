@@ -191,6 +191,49 @@ p strong:first-child {
   margin-top: 4px;
 }
 
+/* --- Print Actions Bar --- */
+.print-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.print-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 0.95em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.print-btn:hover {
+  background: #1e4f7a;
+  transform: translateY(-1px);
+}
+
+.print-btn:active {
+  transform: translateY(0);
+}
+
+.print-btn svg {
+  flex-shrink: 0;
+}
+
+.print-hint {
+  font-size: 0.85em;
+  color: var(--text-secondary);
+}
+
 /* --- Sidebar override (minimal theme) --- */
 header {
   display: none;
@@ -203,10 +246,16 @@ section {
 
 /* --- Print Styles --- */
 @media print {
+  @page {
+    margin: 0.6in 0.5in;
+    size: A4;
+  }
+
   body {
-    font-size: 11pt;
-    line-height: 1.5;
+    font-size: 10pt;
+    line-height: 1.45;
     color: #000;
+    background: #fff;
   }
 
   .wrapper {
@@ -214,6 +263,8 @@ section {
     padding: 0;
   }
 
+  .no-print,
+  .print-actions,
   header {
     display: none !important;
   }
@@ -223,18 +274,98 @@ section {
     text-decoration: none !important;
   }
 
+  a[href^="http"]:after {
+    content: none !important;
+  }
+
+  .resume-header {
+    margin-bottom: 4px;
+  }
+
+  .resume-header h1 {
+    font-size: 1.8em;
+    margin-bottom: 2px;
+  }
+
+  .resume-header .tagline {
+    font-size: 1em;
+    margin-bottom: 6px;
+  }
+
+  .resume-header .contact-bar {
+    font-size: 0.85em;
+  }
+
+  .resume-footer {
+    margin-top: 16px;
+  }
+
   .resume-footer .print-note {
     display: none;
   }
 
+  hr {
+    margin: 12px 0;
+  }
+
   h2 {
+    font-size: 1.1em;
+    margin-top: 14px;
+    margin-bottom: 8px;
     page-break-after: avoid;
   }
 
+  h3 {
+    font-size: 0.95em;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    page-break-after: avoid;
+  }
+
+  .date-range,
+  h3 + p > em:first-child {
+    font-size: 0.85em;
+    margin-bottom: 4px;
+  }
+
+  ul {
+    margin-top: 4px;
+    margin-bottom: 8px;
+  }
+
+  ul li {
+    margin-bottom: 3px;
+    font-size: 0.92em;
+  }
+
+  table {
+    font-size: 0.88em;
+  }
+
   table th {
-    background: #333 !important;
+    background: #2a6496 !important;
     color: #fff !important;
+    padding: 6px 10px;
     -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  table td {
+    padding: 5px 10px;
+  }
+
+  /* Prevent page breaks inside sections */
+  section,
+  .experience-entry,
+  table {
+    page-break-inside: avoid;
+  }
+
+  /* Keep headings with content */
+  h2, h3 {
+    page-break-after: avoid;
+    orphans: 3;
+    widows: 3;
   }
 }
 
