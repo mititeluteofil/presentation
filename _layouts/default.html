@@ -3,8 +3,106 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ site.title | default: "Resume" }}</title>
+
+  <!-- Primary Meta Tags -->
+  <title>{{ site.title }} — Java Developer Resume</title>
+  <meta name="title" content="{{ site.title }} — Java Developer Resume">
   <meta name="description" content="{{ site.description }}">
+  <meta name="author" content="{{ site.author }}">
+  <meta name="robots" content="index, follow">
+
+  <!-- Keywords for search -->
+  <meta name="keywords" content="Teofil Mititelu, Java Developer, Spring Boot, Microservices, Kafka, Kubernetes, Docker, Backend Developer, Romania, Iași, Resume, CV, Software Engineer">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}/">
+  <meta property="og:title" content="{{ site.title }} — Java Developer Resume">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="{{ site.title }} Resume">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="{{ site.url }}{{ site.baseurl }}/">
+  <meta name="twitter:title" content="{{ site.title }} — Java Developer Resume">
+  <meta name="twitter:description" content="{{ site.description }}">
+
+  <!-- Structured Data (JSON-LD) for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Teofil Mititelu",
+    "jobTitle": "Java Developer",
+    "description": "Java Developer with 5+ years of experience in microservices, Spring Boot, Kafka, Kubernetes, and cloud-native development",
+    "url": "{{ site.url }}{{ site.baseurl }}/",
+    "email": "teofil.mititelu@gmail.com",
+    "telephone": "+40787438469",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Iași",
+      "addressCountry": "Romania"
+    },
+    "sameAs": [
+      "https://github.com/mititeluteofil"
+    ],
+    "knowsAbout": [
+      "Java",
+      "Spring Boot",
+      "Microservices",
+      "Apache Kafka",
+      "Kubernetes",
+      "Docker",
+      "PostgreSQL",
+      "REST API",
+      "CI/CD",
+      "Cloud Computing"
+    ],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Alexandru Ioan Cuza University",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Iași",
+        "addressCountry": "Romania"
+      }
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Yonder"
+    }
+  }
+  </script>
+
+  <!-- Additional Structured Data for WebPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Teofil Mititelu — Java Developer Resume",
+    "description": "{{ site.description }}",
+    "url": "{{ site.url }}{{ site.baseurl }}/",
+    "inLanguage": "en",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Teofil Mititelu Resume",
+      "url": "{{ site.url }}{{ site.baseurl }}/"
+    },
+    "about": {
+      "@type": "Person",
+      "name": "Teofil Mititelu"
+    },
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Teofil Mititelu"
+    }
+  }
+  </script>
+
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
