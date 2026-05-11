@@ -13,6 +13,8 @@ layout: default
     <span>Iași, Romania</span>
     <span class="separator">|</span>
     <a href="https://github.com/mititeluteofil">GitHub</a>
+    <span class="separator">|</span>
+    <a href="https://www.linkedin.com/in/teofil-mititelu/">LinkedIn</a>
   </div>
 </div>
 
