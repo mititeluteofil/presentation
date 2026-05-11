@@ -1,7 +1,40 @@
 theme: jekyll-theme-minimal
 
+# Site settings
 title: Teofil Mititelu
-description: Java Developer | Microservices & Cloud
+description: >-
+  Java Developer with 5+ years of experience in microservices, Spring Boot, Kafka,
+  Kubernetes, and cloud-native development. Based in Iași, Romania. View my resume
+  and contact information.
+
+# SEO and social
+author: Teofil Mititelu
+url: "https://mititeluteofil.github.io"
+baseurl: "/presentation"
+
+# Social / Open Graph
+social:
+  name: Teofil Mititelu
+  links:
+    - https://github.com/mititeluteofil
+
+# Twitter card
+twitter:
+  card: summary
+
+# Default image for social sharing
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /presentation/assets/images/og-image.png
+
+# Google verification (add your verification code here after registering with Google Search Console)
+# google_site_verification: "your-verification-code"
+
+# Locale
+lang: en_US
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
