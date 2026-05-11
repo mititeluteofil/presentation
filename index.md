@@ -14,7 +14,7 @@ layout: default
     <span class="separator">|</span>
     <a href="https://github.com/mititeluteofil">GitHub</a>
     <span class="separator">|</span>
-    <a href="https://www.linkedin.com/in/teofil-mititelu/">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/teofıl-mititelu-60a156139">LinkedIn</a>
   </div>
 </div>
 
