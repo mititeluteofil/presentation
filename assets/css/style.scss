@@ -70,6 +70,19 @@ body {
   color: var(--border);
 }
 
+/* --- Variant Switch Banner --- */
+.variant-switch {
+  text-align: center;
+  font-size: 0.9em;
+  color: var(--text-secondary);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.variant-switch a {
+  font-weight: 600;
+}
+
 /* --- Section Headings --- */
 h2 {
   font-size: 1.3em;

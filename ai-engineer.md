@@ -1,13 +1,14 @@
 ---
 layout: default
-title: "Teofil Mititelu — Senior Java Backend Engineer"
-description: "Senior Java Backend Engineer with 7+ years of experience in microservices, Spring Boot, Kafka, Kubernetes, and cloud-native development."
-job_title: "Senior Software Engineer (Java)"
+title: "Teofil Mititelu — AI-Assisted Software Engineer"
+description: "AI-Assisted Software Engineer specializing in agentic systems, AI-DLC, and developer tooling, backed by a strong Java/Spring Boot foundation."
+job_title: "AI-Assisted Software Engineer"
+permalink: /ai-engineer/
 ---
 
 <div class="resume-header">
   <h1>Teofil Mititelu</h1>
-  <p class="tagline">Senior Java Backend Engineer · Microservices · Event-Driven Systems</p>
+  <p class="tagline">AI-Assisted Software Engineer · Agentic Systems · Developer Tooling</p>
   <div class="contact-bar">
     <a href="mailto:teofil.mititelu@gmail.com">teofil.mititelu@gmail.com</a>
     <span class="separator">|</span>
@@ -21,13 +22,13 @@ job_title: "Senior Software Engineer (Java)"
   </div>
 </div>
 
-<p class="variant-switch no-print">Looking for my <a href="{{ '/ai-engineer/' | relative_url }}">AI-Assisted Software Engineer</a> resume?</p>
+<p class="variant-switch no-print">Looking for my <a href="{{ '/' | relative_url }}">Senior Java Engineer</a> resume?</p>
 
 ---
 
 ## Profile
 
-Senior Java Backend Engineer with 7+ years of experience building scalable systems in banking, telecom and healthcare. Specialized in microservices, event-driven architecture and cloud-native deployments. Strong focus on system reliability, production debugging and CI/CD optimization.
+Software engineer specializing in AI-assisted and agentic engineering, built on a strong Java/Spring Boot foundation. Shipped AI-powered developer tooling (automated UML/diagram generation) and agentic systems with tool-calling, guardrails and circuit breakers. Active practitioner of AI-DLC and spec-driven development, using Claude Code and IntelliJ Junie to accelerate delivery without sacrificing engineering rigor.
 
 ---
 
