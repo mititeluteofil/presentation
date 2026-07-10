@@ -5,31 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Primary Meta Tags -->
-  <title>{{ site.title }} — Java Developer Resume</title>
-  <meta name="title" content="{{ site.title }} — Java Developer Resume">
-  <meta name="description" content="{{ site.description }}">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="title" content="{{ page.title | default: site.title }}">
+  <meta name="description" content="{{ page.description | default: site.description }}">
   <meta name="author" content="{{ site.author }}">
   <meta name="robots" content="index, follow">
 
   <!-- Keywords for search -->
-  <meta name="keywords" content="Teofil Mititelu, Java Developer, Spring Boot, Microservices, Kafka, Kubernetes, Docker, Backend Developer, Romania, Iași, Resume, CV, Software Engineer">
+  <meta name="keywords" content="Teofil Mititelu, Java Developer, Spring Boot, Microservices, Kafka, Kubernetes, Docker, AI-Assisted Engineering, Agentic AI, Backend Developer, Romania, Iași, Resume, CV, Software Engineer">
 
   <!-- Canonical URL -->
-  <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}/">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}/">
-  <meta property="og:title" content="{{ site.title }} — Java Developer Resume">
-  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
   <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="{{ site.title }} Resume">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:url" content="{{ site.url }}{{ site.baseurl }}/">
-  <meta name="twitter:title" content="{{ site.title }} — Java Developer Resume">
-  <meta name="twitter:description" content="{{ site.description }}">
+  <meta name="twitter:url" content="{{ page.url | absolute_url }}">
+  <meta name="twitter:title" content="{{ page.title | default: site.title }}">
+  <meta name="twitter:description" content="{{ page.description | default: site.description }}">
 
   <!-- Structured Data (JSON-LD) for Google -->
   <script type="application/ld+json">
@@ -37,9 +37,9 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Teofil Mititelu",
-    "jobTitle": "Java Developer",
-    "description": "Java Developer with 5+ years of experience in microservices, Spring Boot, Kafka, Kubernetes, and cloud-native development",
-    "url": "{{ site.url }}{{ site.baseurl }}/",
+    "jobTitle": "{{ page.job_title | default: "Java Developer" }}",
+    "description": "{{ page.description | default: site.description }}",
+    "url": "{{ page.url | absolute_url }}",
     "email": "teofil.mititelu@gmail.com",
     "telephone": "+40787438469",
     "address": {
@@ -48,7 +48,8 @@
       "addressCountry": "Romania"
     },
     "sameAs": [
-      "https://github.com/mititeluteofil"
+      "https://github.com/mititeluteofil",
+      "https://www.linkedin.com/in/teofıl-mititelu-60a156139"
     ],
     "knowsAbout": [
       "Java",
@@ -60,7 +61,9 @@
       "PostgreSQL",
       "REST API",
       "CI/CD",
-      "Cloud Computing"
+      "Cloud Computing",
+      "Agentic AI",
+      "AI-Assisted Development"
     ],
     "alumniOf": {
       "@type": "CollegeOrUniversity",
@@ -83,9 +86,9 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Teofil Mititelu — Java Developer Resume",
-    "description": "{{ site.description }}",
-    "url": "{{ site.url }}{{ site.baseurl }}/",
+    "name": "{{ page.title | default: site.title }}",
+    "description": "{{ page.description | default: site.description }}",
+    "url": "{{ page.url | absolute_url }}",
     "inLanguage": "en",
     "isPartOf": {
       "@type": "WebSite",
